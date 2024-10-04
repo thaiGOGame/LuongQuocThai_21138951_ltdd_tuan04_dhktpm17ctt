@@ -15,26 +15,26 @@ export default function SecondScreen({ navigation }) {
   };
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      {/*TouchOpa with image require ../../../assets/images/arrow.png */}
+      {/*TouchOpa with image require ../assets/images/arrow.png */}
       <TouchableOpacity style={styles.flex_left} onPress={() => navigation.navigate("First Screen")}>
-        <Image source={require('../../../assets/images/arrow.png')} style={{ width: 25, height: 25 }} />
+        <Image source={require('../assets/images/arrow.png')} style={{ width: 25, height: 25 }} />
       </TouchableOpacity>
       {/*App logo, then Nice to see you!, then Create your account */}
-      <Image source={require('../../../assets/images/Image 19.png')} style={{ width: 150, height: 150 }} />
+      <Image source={require('../assets/images/Image 19.png')} style={{ width: 150, height: 150 }} />
       <Text style={styles.title}>Nice to see you!</Text>
       <Text>Create your account</Text>
       {/*A form with placeholder a input Enter your user name, a input Enter your email address, a input Enter your password with image eye to show or hide password inside input*/}
       <View style={{ flexDirection: 'column', marginBottom: 20, width:"100%", gap: 10 }}>
           {/* Username Input */}
           <View style={styles.inputContainer}>
-            <Image source={require('../../../assets/images/codicon_account.png')} style={styles.inputIcon} />
+            <Image source={require('../assets/images/codicon_account.png')} style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Enter your user name"
             />
           </View>
           <View style={styles.inputContainer}>
-            <Image source={require('../../../assets/images/Vector.png')} style={styles.inputIcon} />
+            <Image source={require('../assets/images/Vector.png')} style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Enter your user email"
@@ -42,14 +42,14 @@ export default function SecondScreen({ navigation }) {
             />
           </View>
           <View style={styles.inputContainer}>
-            <Image source={require('../../../assets/images/lock.png')} style={styles.inputIcon} />
+            <Image source={require('../assets/images/lock.png')} style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Enter your user password"
               secureTextEntry={!isPasswordVisible}
             />
             <TouchableOpacity onPress={togglePasswordVisibility} style={{ marginLeft: 15 }} >
-              <Image source={require('../../../assets/images/eye.png')} style={{ width: 30, height: 30 }} />
+              <Image source={require('../assets/images/eye.png')} style={{ width: 30, height: 30 }} />
             </TouchableOpacity>
           </View>
         </View>

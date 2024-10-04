@@ -8,11 +8,11 @@ export default function ThirdScreen({ navigation }) {
   };
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Image source={require('../../../assets/images/Image 20.png')} style={{ width: '100%' }} />
+      <Image source={require('../assets/images/Image 20.png')} style={{ width: '100%' }} />
       <Text style={styles.title}>Welcome</Text>
       <Text style={styles.boldtext}>Email</Text>
       <View style={styles.inputContainer}>
-        <Image source={require('../../../assets/images/Vector.png')} style={styles.inputIcon} />
+        <Image source={require('../assets/images/Vector.png')} style={styles.inputIcon} />
         <TextInput
           style={styles.input}
           placeholder="Enter your user email"
@@ -21,14 +21,14 @@ export default function ThirdScreen({ navigation }) {
       </View>
       <Text style={styles.boldtext}>Password</Text>
       <View style={styles.inputContainer}>
-        <Image source={require('../../../assets/images/lock.png')} style={styles.inputIcon} />
+        <Image source={require('../assets/images/lock.png')} style={styles.inputIcon} />
         <TextInput
           style={styles.input}
           placeholder="Enter your user password"
           secureTextEntry={!isPasswordVisible}
         />
         <TouchableOpacity onPress={togglePasswordVisibility} style={{ marginLeft: 15 }} >
-          <Image source={require('../../../assets/images/eye.png')} style={{ width: 30, height: 30 }} />
+          <Image source={require('../assets/images/eye.png')} style={{ width: 30, height: 30 }} />
         </TouchableOpacity>
       </View>
       <TouchableOpacity

@@ -6,9 +6,9 @@ export default function FirstScreen({ navigation }) {
   return (  <ScrollView contentContainerStyle={styles.container}>
     
       
-      {/*Image tag require ../../../assets/images/Image 18.png*/}
+      {/*Image tag require ../assets/images/Image 18.png*/}
       <Image
-        source={require("../../../assets/images/Container 17.png")}
+        source={require("../assets/images/Container 17.png")}
         style={styles.images}
       />
       <Text style={styles.title}>Boost Productivity</Text>
